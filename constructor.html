@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.1" />
+<title>ad.constructor API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>ad.constructor</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import numpy as np
+import pandas as pd 
+import copy 
+from .utils import convert_to_timestamp, padd_df, sort_df
+from .anomaly.base import Base_AnomalyDetection
+from .forecast.base import Base_Forecast
+
+#
+class Constructor(object):
+
+    &#39;&#39;&#39;
+    Object that merges and performs anomaly detection and forecast.
+    So, we find the a-normal object by comparing its values to the other objects&#39; values at the *same time and the same comparison points*.
+
+    Args:
+        df (pd.DataFrame): The input data.
+
+        time_col (string): The name of the column in the df that gives the timestamp of the event.
+
+        obj_col (string): The name of the column in the df that identifies the object to find.
+
+        comp_col (list): The name of the column which is used as comparison point.
+
+        value_col (list): List of column-names which are compared.
+
+        value_agg (list): List of agg-functions.
+            default = _*[&#39;mean&#39;]
+
+        bin_size_time (string): The bin size of time aggregation.
+            default = &#39;1H&#39;
+
+        n_bins_past (int): Number of time bins in the past to consider for the forecast.
+            default = 4
+
+        n_bins_pred (int): Number of time bins to predict.
+            default = 2
+
+    Methods:
+        .set_anomaly_detection_model(ad, ad_kwargs):
+            ad (ad.anomaly.base.Base_AnomalyDetection): The model.
+            ad_kwargs: The parameters of the model.
+
+        .set_forecast_model(forecast, forecast_kwargs):
+            forecast (ad.forecast.base.Base_Forecast): The model.
+            forecast_kwargs: The parameters of the model.
+
+        .run():
+            Returns (pd.DataFrame): Dataframe with anomalyScores.
+
+    Example Usage:
+        Input-df:
+                    time            obj         comp       value
+                0   (pd.Timestamp)  (int)       (int)      (float)
+                1   (pd.Timestamp)  (int)       (int)      (float)
+                ...
+                _   (pd.Timestamp)  (int)       (int)      (float)
+
+        from ad.constructor import Constructor
+        from ad.anomaly import VoteDeviation
+
+        constr = Constructor(
+            df,
+            time_col = &#39;time&#39;,
+            obj_col = &#39;obj&#39;, 
+            comp_col = &#39;comp&#39;,
+            value_col= [&#39;value&#39;],
+        )
+
+        constr.set_anomaly_detection_model(VoteDeviation)
+
+        # Optional 
+        # from ad.forecast import GaussianProcess
+        # constr.set_forecast_model(GaussianProcess)
+
+        df_anomaly = constr.run()
+
+    &#39;&#39;&#39;
+
+    def __init__(
+        self, df, time_col, obj_col, comp_col, value_col, 
+        value_agg = None,
+        bin_size_time = &#39;1H&#39;,
+        n_bins_past = 4,
+        n_bins_pred = 2
+        ):
+
+        self.df = copy.copy(df)
+
+        self.time = time_col
+        self.obj = obj_col
+        self.comp = comp_col
+        self.value = value_col
+        self.value_agg = value_agg
+        self.time_bin = bin_size_time
+        self.n_bins_past = n_bins_past
+        self.n_bins_pred = n_bins_pred
+
+        self.ad = None 
+        self.forecast = None
+
+        if self.value_agg is None:
+            self.value_agg = len(self.value)*[&#39;mean&#39;]
+
+        # Check if column names are present in df
+        if not set([time_col, obj_col, comp_col] + value_col).issubset(set(self.df.columns.to_list())):
+            raise ValueError(&#39;The chosen column names are not present in the df.&#39;)
+
+        # Swap columns into right order
+        self.df = self.df.reindex(columns = [self.time]+[self.obj]+[self.comp]+self.value)
+
+        # Convert timestamp
+        convert_to_timestamp(self.df, self.time)
+
+        # Grouping and aggregating
+        self.df = self.df.groupby(
+                [
+                    pd.Grouper(
+                    key = self.time,
+                    freq = self.time_bin
+                    ),
+                    self.obj,
+                    self.comp
+                ]
+            ).agg(dict(zip(self.value, self.value_agg))).reset_index()
+
+        # Padd missing values / insert NaN&#39;s
+        self.df = padd_df(self.df)
+
+        # Sort df
+        self.df = sort_df(self.df)
+
+
+    def set_anomaly_detection_model(self, ad, **ad_args):
+
+        self.AD = ad 
+        self.ad_args = ad_args
+
+        self.ad = ad(self.df, **ad_args)
+        if not isinstance(self.ad, Base_AnomalyDetection):
+            raise TypeError(&#39;Provided anomaly detection model is not as expected.&#39;)
+
+    def set_forecast_model(self, forecast, **forecast_args):
+        
+        # Check if provided time &gt; n_bins_past
+        if self.df[self.time].unique().size &lt; self.n_bins_past:
+            raise ValueError(
+                f&#39;The input dataframe does not span enough time\
+                 , so {self.n_bins_pred}x{self.time_bin}.&#39;)
+
+        # Truncate df to only include the n_bins_pred timestamps
+        df_trunc = self.df[self.df[self.time] &gt;= self.df[self.time].unique()[-self.n_bins_past]]
+
+        # Number of rows in df 
+        idx_of_last_row = len(self.df.index)
+
+        self.forecast = forecast(
+            df = df_trunc, 
+            n_bins_past = self.n_bins_past, 
+            n_bins_pred = self.n_bins_pred,
+            idx_of_first_row = idx_of_last_row +1,  
+            **forecast_args)
+            
+        if not isinstance(self.forecast, Base_Forecast):
+            raise TypeError(&#39;Provided forecast model is not as expected.&#39;)
+
+    def _cleanup(self, df_anomaly):
+        timestamps = df_anomaly[self.time].unique()
+        start = timestamps[0]
+        end =  timestamps[-1]
+
+        # All timestamps between start and end
+        multi_index = pd.MultiIndex.from_product([pd.date_range(start = start, end = end, freq= self.time_bin), df_anomaly[self.obj].unique()], names = [self.time, self.obj])
+
+        df_NaN = pd.DataFrame(data = {}, index = df_anomaly.columns[:2].to_list(), columns = df_anomaly.columns[2:3].to_list()).reindex(multi_index)
+
+        # Merge with existing, to fill in all missing time stamps with NaN values, plotly needs this
+        df_anomaly_multi = df_anomaly.set_index(df_anomaly.columns[:2].to_list())
+        df_app = df_anomaly_multi.append(df_NaN)
+
+        return df_app[~df_app.index.duplicated(keep=&#39;first&#39;)].reset_index().sort_values(df_anomaly.columns[:2].to_list())
+
+
+    def run(self):
+
+        # Do forecast if it was set previously
+        if self.forecast is not None:
+            df_forecast = self.forecast.do_forecast()
+
+            # Append forecast df to existing df
+            df_extended = self.df.append(df_forecast)
+
+            # Re-set anomaly detection with longer df if forecast was set previously 
+            self.ad = self.AD(df_extended, **self.ad_args)
+
+
+        # Do anomaly detection
+        df_anomaly = self.ad.calc_anomaly()
+
+        # Padd all missing times with NaN
+        df_anomaly = self._cleanup(df_anomaly)
+
+        return df_anomaly</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="ad.constructor.Constructor"><code class="flex name class">
+<span>class <span class="ident">Constructor</span></span>
+<span>(</span><span>df, time_col, obj_col, comp_col, value_col, value_agg=None, bin_size_time='1H', n_bins_past=4, n_bins_pred=2)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Object that merges and performs anomaly detection and forecast.
+So, we find the a-normal object by comparing its values to the other objects' values at the <em>same time and the same comparison points</em>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>df</code></strong> :&ensp;<code>pd.DataFrame</code></dt>
+<dd>The input data.</dd>
+<dt><strong><code>time_col</code></strong> :&ensp;<code>string</code></dt>
+<dd>The name of the column in the df that gives the timestamp of the event.</dd>
+<dt><strong><code>obj_col</code></strong> :&ensp;<code>string</code></dt>
+<dd>The name of the column in the df that identifies the object to find.</dd>
+<dt><strong><code>comp_col</code></strong> :&ensp;<code>list</code></dt>
+<dd>The name of the column which is used as comparison point.</dd>
+<dt><strong><code>value_col</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of column-names which are compared.</dd>
+<dt><strong><code>value_agg</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of agg-functions.
+default = _*['mean']</dd>
+<dt><strong><code>bin_size_time</code></strong> :&ensp;<code>string</code></dt>
+<dd>The bin size of time aggregation.
+default = '1H'</dd>
+<dt><strong><code>n_bins_past</code></strong> :&ensp;<code>int</code></dt>
+<dd>Number of time bins in the past to consider for the forecast.
+default = 4</dd>
+<dt><strong><code>n_bins_pred</code></strong> :&ensp;<code>int</code></dt>
+<dd>Number of time bins to predict.
+default = 2</dd>
+</dl>
+<h2 id="methods">Methods</h2>
+<p>.set_anomaly_detection_model(ad, ad_kwargs):
+ad (ad.anomaly.base.Base_AnomalyDetection): The model.
+ad_kwargs: The parameters of the model.</p>
+<p>.set_forecast_model(forecast, forecast_kwargs):
+forecast (ad.forecast.base.Base_Forecast): The model.
+forecast_kwargs: The parameters of the model.</p>
+<p>.run():
+Returns (pd.DataFrame): Dataframe with anomalyScores.</p>
+<p>Example Usage:
+Input-df:
+time
+obj
+comp
+value
+0
+(pd.Timestamp)
+(int)
+(int)
+(float)
+1
+(pd.Timestamp)
+(int)
+(int)
+(float)
+&hellip;
+_
+(pd.Timestamp)
+(int)
+(int)
+(float)</p>
+<pre><code>from ad.constructor import Constructor
+from ad.anomaly import VoteDeviation
+
+constr = Constructor(
+    df,
+    time_col = 'time',
+    obj_col = 'obj', 
+    comp_col = 'comp',
+    value_col= ['value'],
+)
+
+constr.set_anomaly_detection_model(VoteDeviation)
+
+# Optional 
+# from ad.forecast import GaussianProcess
+# constr.set_forecast_model(GaussianProcess)
+
+df_anomaly = constr.run()
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Constructor(object):
+
+    &#39;&#39;&#39;
+    Object that merges and performs anomaly detection and forecast.
+    So, we find the a-normal object by comparing its values to the other objects&#39; values at the *same time and the same comparison points*.
+
+    Args:
+        df (pd.DataFrame): The input data.
+
+        time_col (string): The name of the column in the df that gives the timestamp of the event.
+
+        obj_col (string): The name of the column in the df that identifies the object to find.
+
+        comp_col (list): The name of the column which is used as comparison point.
+
+        value_col (list): List of column-names which are compared.
+
+        value_agg (list): List of agg-functions.
+            default = _*[&#39;mean&#39;]
+
+        bin_size_time (string): The bin size of time aggregation.
+            default = &#39;1H&#39;
+
+        n_bins_past (int): Number of time bins in the past to consider for the forecast.
+            default = 4
+
+        n_bins_pred (int): Number of time bins to predict.
+            default = 2
+
+    Methods:
+        .set_anomaly_detection_model(ad, ad_kwargs):
+            ad (ad.anomaly.base.Base_AnomalyDetection): The model.
+            ad_kwargs: The parameters of the model.
+
+        .set_forecast_model(forecast, forecast_kwargs):
+            forecast (ad.forecast.base.Base_Forecast): The model.
+            forecast_kwargs: The parameters of the model.
+
+        .run():
+            Returns (pd.DataFrame): Dataframe with anomalyScores.
+
+    Example Usage:
+        Input-df:
+                    time            obj         comp       value
+                0   (pd.Timestamp)  (int)       (int)      (float)
+                1   (pd.Timestamp)  (int)       (int)      (float)
+                ...
+                _   (pd.Timestamp)  (int)       (int)      (float)
+
+        from ad.constructor import Constructor
+        from ad.anomaly import VoteDeviation
+
+        constr = Constructor(
+            df,
+            time_col = &#39;time&#39;,
+            obj_col = &#39;obj&#39;, 
+            comp_col = &#39;comp&#39;,
+            value_col= [&#39;value&#39;],
+        )
+
+        constr.set_anomaly_detection_model(VoteDeviation)
+
+        # Optional 
+        # from ad.forecast import GaussianProcess
+        # constr.set_forecast_model(GaussianProcess)
+
+        df_anomaly = constr.run()
+
+    &#39;&#39;&#39;
+
+    def __init__(
+        self, df, time_col, obj_col, comp_col, value_col, 
+        value_agg = None,
+        bin_size_time = &#39;1H&#39;,
+        n_bins_past = 4,
+        n_bins_pred = 2
+        ):
+
+        self.df = copy.copy(df)
+
+        self.time = time_col
+        self.obj = obj_col
+        self.comp = comp_col
+        self.value = value_col
+        self.value_agg = value_agg
+        self.time_bin = bin_size_time
+        self.n_bins_past = n_bins_past
+        self.n_bins_pred = n_bins_pred
+
+        self.ad = None 
+        self.forecast = None
+
+        if self.value_agg is None:
+            self.value_agg = len(self.value)*[&#39;mean&#39;]
+
+        # Check if column names are present in df
+        if not set([time_col, obj_col, comp_col] + value_col).issubset(set(self.df.columns.to_list())):
+            raise ValueError(&#39;The chosen column names are not present in the df.&#39;)
+
+        # Swap columns into right order
+        self.df = self.df.reindex(columns = [self.time]+[self.obj]+[self.comp]+self.value)
+
+        # Convert timestamp
+        convert_to_timestamp(self.df, self.time)
+
+        # Grouping and aggregating
+        self.df = self.df.groupby(
+                [
+                    pd.Grouper(
+                    key = self.time,
+                    freq = self.time_bin
+                    ),
+                    self.obj,
+                    self.comp
+                ]
+            ).agg(dict(zip(self.value, self.value_agg))).reset_index()
+
+        # Padd missing values / insert NaN&#39;s
+        self.df = padd_df(self.df)
+
+        # Sort df
+        self.df = sort_df(self.df)
+
+
+    def set_anomaly_detection_model(self, ad, **ad_args):
+
+        self.AD = ad 
+        self.ad_args = ad_args
+
+        self.ad = ad(self.df, **ad_args)
+        if not isinstance(self.ad, Base_AnomalyDetection):
+            raise TypeError(&#39;Provided anomaly detection model is not as expected.&#39;)
+
+    def set_forecast_model(self, forecast, **forecast_args):
+        
+        # Check if provided time &gt; n_bins_past
+        if self.df[self.time].unique().size &lt; self.n_bins_past:
+            raise ValueError(
+                f&#39;The input dataframe does not span enough time\
+                 , so {self.n_bins_pred}x{self.time_bin}.&#39;)
+
+        # Truncate df to only include the n_bins_pred timestamps
+        df_trunc = self.df[self.df[self.time] &gt;= self.df[self.time].unique()[-self.n_bins_past]]
+
+        # Number of rows in df 
+        idx_of_last_row = len(self.df.index)
+
+        self.forecast = forecast(
+            df = df_trunc, 
+            n_bins_past = self.n_bins_past, 
+            n_bins_pred = self.n_bins_pred,
+            idx_of_first_row = idx_of_last_row +1,  
+            **forecast_args)
+            
+        if not isinstance(self.forecast, Base_Forecast):
+            raise TypeError(&#39;Provided forecast model is not as expected.&#39;)
+
+    def _cleanup(self, df_anomaly):
+        timestamps = df_anomaly[self.time].unique()
+        start = timestamps[0]
+        end =  timestamps[-1]
+
+        # All timestamps between start and end
+        multi_index = pd.MultiIndex.from_product([pd.date_range(start = start, end = end, freq= self.time_bin), df_anomaly[self.obj].unique()], names = [self.time, self.obj])
+
+        df_NaN = pd.DataFrame(data = {}, index = df_anomaly.columns[:2].to_list(), columns = df_anomaly.columns[2:3].to_list()).reindex(multi_index)
+
+        # Merge with existing, to fill in all missing time stamps with NaN values, plotly needs this
+        df_anomaly_multi = df_anomaly.set_index(df_anomaly.columns[:2].to_list())
+        df_app = df_anomaly_multi.append(df_NaN)
+
+        return df_app[~df_app.index.duplicated(keep=&#39;first&#39;)].reset_index().sort_values(df_anomaly.columns[:2].to_list())
+
+
+    def run(self):
+
+        # Do forecast if it was set previously
+        if self.forecast is not None:
+            df_forecast = self.forecast.do_forecast()
+
+            # Append forecast df to existing df
+            df_extended = self.df.append(df_forecast)
+
+            # Re-set anomaly detection with longer df if forecast was set previously 
+            self.ad = self.AD(df_extended, **self.ad_args)
+
+
+        # Do anomaly detection
+        df_anomaly = self.ad.calc_anomaly()
+
+        # Padd all missing times with NaN
+        df_anomaly = self._cleanup(df_anomaly)
+
+        return df_anomaly</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="ad.constructor.Constructor.run"><code class="name flex">
+<span>def <span class="ident">run</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def run(self):
+
+    # Do forecast if it was set previously
+    if self.forecast is not None:
+        df_forecast = self.forecast.do_forecast()
+
+        # Append forecast df to existing df
+        df_extended = self.df.append(df_forecast)
+
+        # Re-set anomaly detection with longer df if forecast was set previously 
+        self.ad = self.AD(df_extended, **self.ad_args)
+
+
+    # Do anomaly detection
+    df_anomaly = self.ad.calc_anomaly()
+
+    # Padd all missing times with NaN
+    df_anomaly = self._cleanup(df_anomaly)
+
+    return df_anomaly</code></pre>
+</details>
+</dd>
+<dt id="ad.constructor.Constructor.set_anomaly_detection_model"><code class="name flex">
+<span>def <span class="ident">set_anomaly_detection_model</span></span>(<span>self, ad, **ad_args)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_anomaly_detection_model(self, ad, **ad_args):
+
+    self.AD = ad 
+    self.ad_args = ad_args
+
+    self.ad = ad(self.df, **ad_args)
+    if not isinstance(self.ad, Base_AnomalyDetection):
+        raise TypeError(&#39;Provided anomaly detection model is not as expected.&#39;)</code></pre>
+</details>
+</dd>
+<dt id="ad.constructor.Constructor.set_forecast_model"><code class="name flex">
+<span>def <span class="ident">set_forecast_model</span></span>(<span>self, forecast, **forecast_args)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_forecast_model(self, forecast, **forecast_args):
+    
+    # Check if provided time &gt; n_bins_past
+    if self.df[self.time].unique().size &lt; self.n_bins_past:
+        raise ValueError(
+            f&#39;The input dataframe does not span enough time\
+             , so {self.n_bins_pred}x{self.time_bin}.&#39;)
+
+    # Truncate df to only include the n_bins_pred timestamps
+    df_trunc = self.df[self.df[self.time] &gt;= self.df[self.time].unique()[-self.n_bins_past]]
+
+    # Number of rows in df 
+    idx_of_last_row = len(self.df.index)
+
+    self.forecast = forecast(
+        df = df_trunc, 
+        n_bins_past = self.n_bins_past, 
+        n_bins_pred = self.n_bins_pred,
+        idx_of_first_row = idx_of_last_row +1,  
+        **forecast_args)
+        
+    if not isinstance(self.forecast, Base_Forecast):
+        raise TypeError(&#39;Provided forecast model is not as expected.&#39;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="ad" href="index.html">ad</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="ad.constructor.Constructor" href="#ad.constructor.Constructor">Constructor</a></code></h4>
+<ul class="">
+<li><code><a title="ad.constructor.Constructor.run" href="#ad.constructor.Constructor.run">run</a></code></li>
+<li><code><a title="ad.constructor.Constructor.set_anomaly_detection_model" href="#ad.constructor.Constructor.set_anomaly_detection_model">set_anomaly_detection_model</a></code></li>
+<li><code><a title="ad.constructor.Constructor.set_forecast_model" href="#ad.constructor.Constructor.set_forecast_model">set_forecast_model</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.1</a>.</p>
+</footer>
+</body>
+</html>
